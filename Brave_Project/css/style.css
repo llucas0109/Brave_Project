@@ -43,13 +43,13 @@ header > div{
     overflow: visible;
 }
 div#menu{
-    height: 46px;
     background-color: #423EEE;
     color: white;
     margin-top: 6%;
     margin-right: 5%; 
     height: 48px;  
-    border: 2px solid #423EEE;
+    border: 2px solid #3835ce;
+    cursor: pointer;
 }
 div#menu > i{
     font-size: 1.7em;
@@ -78,7 +78,7 @@ section > p#bottom{
 }
 section > p > a{
     position: relative;
-    background-image: linear-gradient(to right, #770fac, #A31B83, #D3373D );
+    background-image: linear-gradient(to right, #770EAA, #A31B83, #D3373D );
     color: #FFFFFF;
     font-size: 0.9em;
     font-weight: 500;
@@ -121,4 +121,15 @@ div#conteudos{
     background-color: #FFFFFF;
     padding: 50px 50px;
 }
+div#painel{
+    width: 80%;
+    margin-left: 30px;
+}
+div#painel > h1{
+  padding-top: 60px; 
+  font-weight: 550; 
+  line-height: 1.4em;
+  padding-bottom: 15px;
+}
+
 
