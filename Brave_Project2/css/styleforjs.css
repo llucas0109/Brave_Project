@@ -17,9 +17,9 @@
     position: absolute;
     background-color: #FFFFFF;
     top: 17px;
-    left: 16%;
+    left: 18%;
     height: 518px;
-    width: 75vw;
+    width: 75%;
     border-radius: 14px 0px 0px 14px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -33,7 +33,7 @@
 #close{
     position: absolute;
     /*Se aplicar text align no proprio objeto inves do pai tm funciona!!*/
-    left: 87.6%;
+    left: 85.6%;
     top: 2.5%;
     font-size: 2.1em;
     cursor: pointer;
