@@ -11,74 +11,155 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
-#firtnavegador{
-    display: none;
+    list-style: none;
 }
 #navegador{
     position: absolute;
-    background-color: #fff;
-    top: 19px;
-    left: 43%;
+    background-color: #FFFFFF;
+    top: 17px;
+    left: 39%;
+    height: 518px;
     width: 54%;
-    height: 523px;
     border-radius: 14px 0px 0px 14px;
     overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 20px;
+    font-size: 10.5px;
+    font-weight: 580;
+    line-height: 21px;
+    box-shadow: -4px 4px 31px rgba(0, 0, 0, 0.441);
+    padding: 6% 0% 0% 6%;
 }
 #close{
     position: absolute;
     /*Se aplicar text align no proprio objeto inves do pai tm funciona!!*/
-    left: 87.5%;
+    left: 87.6%;
     top: 2.5%;
     font-size: 2.1em;
     cursor: pointer;
     z-index: 1;
 }
-#textnav li:hover{
+.colorli:hover{
     color: #4C54D2;
 }
 #smalltext{
     color: #A8ADBF;
     font-size: 0.7em;
     font-weight: 800;
-    padding-bottom: 2px;
 }
 #textnav{
-    position: absolute;
+    /*position: absolute;
     top: 5%;
-    left: 4%;
-    background-color: #fff;
-    overflow: hidden;
-    width: 78%;
+    left: 3%;*/
+    
+    background-color: #FFFFFF;
     height: 100%;
-    margin-left: 20px;
-    font-size: 66%;
-    font-weight: 600;
-    line-height: 1.9em;
+    
 }
 #textnavli1{
-    background-color: #fff;
+    background-color: #FFFFFF;
     margin-bottom: 1px;
 }
 
-div.Recursostext{
+div#Recursostext{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 6px;
     cursor: pointer;
+    padding-bottom: 14px;
 }
+
 /*Transition So valem para elementos quantificaveis ou seja que tenham numeros entao no caso de displey block e displey none nao funcionaria .*/
 #expandmore{
     display: block;
-    margin-top: 5px;
     font-size: 1.2em;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in;
+    margin-top: 5px;
+    padding: 0px 24px 0px 24px;
+    color: #000
 }
-#linha1{
-    background-color: #f1f1f1;
+#hr1{
+    position: absolute;
+    background-color: #4e4e4e20;
     border: 1px solid #f1f1f100; /*Precisa adicionaruma borda para conseguir aterar cor usando o back ground depois!!*/
-}
+    width: 77%; 
+    /*top: 56%; */ 
+    top: 27%;
+    transition: transform 0.4s ease;
+}   
 ul#listRe{
+    position: absolute;
     display: none;
+    margin-left: 7px;
+}
+    /*Tivemos que usar duas classes que se alternam dento do js e dua key frames respectivamente colocamos disples none e block no pai como padrao para conseguir. depois visuamente adicionamos no keyframe um displey block. */
+.opac{ 
+    animation: opackey 0.3s linear forwards;
+}
+.trans{
+    animation: transkey 0.3s linear forwards;
+}
+@keyframes opackey{
+    0%{display: block} /*IMPORTANTE!! O elemento pai no javascript esta como none'! E aqui colocaos displey block mas quando acabar vai estar como none!. */
+    1%{opacity: 1}
+    100%{opacity: 0}
+}
+@keyframes transkey{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+ul > li#mon{
+    position: absolute;
+    top: 28.5%;
+    width: 76%;
+    transition: transform 0.4s ease 0.1s;
+    background-color: #FFFFFF;
+}
+#hrN{
+    background-color: #4e4e4e20;
+    border: 1px solid #f1f1f100; /*Precisa adicionaruma borda para conseguir aterar cor usando o back ground depois!!*/
+    width: 100%; 
+    margin: 7px 0px 7px 0px;
+}
+#download{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    width:46%;
+    height: 120px;
+    top: 34%;
+    left: 46%;
+    padding: 10px 0px 32px 0px;
+    font-size: 10.5px;
+    font-weight: 580;
+    box-shadow: 0px -20px 10px rgb(255, 255, 255);
+}
+#baixarbrave{
+    width: 85%;
+    height: 42%;
+    padding: 5% 0% 12% 0%;
+    border-radius: 24px;
+    margin-top: 0%;
+    background-color: #4C54D2;
+    color: #FFFFFF;
+    
+}
+#baixarbrave:hover{
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.279);
+}
+#testarbrave{
+    width: 85%;
+    height: 42%;
+    padding: 4% 0% 11% 0%;
+    border-radius: 24px;
+    border: 1px solid #000;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 0.1px;
+}
+#testarbrave:hover{
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.279);
 }
