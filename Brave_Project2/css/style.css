@@ -23,18 +23,6 @@ main{
     position: relative;
     background-image: linear-gradient(to bottom,#3d0ba9e1, #7C0EA8);
 }
-div#efeitodefundo{
-    position: absolute;
-    top: -100px;
-    left: 60px;
-    width: 200px;
-    height: 700px;
-    background-image: linear-gradient(to top,#780EA8,#460ba5);
-    box-shadow: -3px 30px 190px #2a0a53f3;
-    transform: rotate(0.2turn); /*Rotaciona o objeto*/
-    border-radius: 30px;
-    z-index: -1;/*Diminui o z-index padrao somente se usado numeros negativos*/
-}
 header{
     display: flex;
     justify-content: space-between;
